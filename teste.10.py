@@ -5,4 +5,4 @@ if velo > 80:
     print(f'Você foi multado no valor de {s}, mais atenção da próxima!')
 
 if velo <= 80:
-    print('Parabens, você esta nas normas de trânsito!')
+    print('Parabens, voc esta nas normas de trânsito!')
