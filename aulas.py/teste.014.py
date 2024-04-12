@@ -13,24 +13,26 @@ msg = '''
 '''
 
 print(msg)
-tipo = input(f'{nome}, qual o id do tipo de instalação?')
+tipo = input(f'{nome}, qual o id do tipo de instalação?').upper()
 qtd = float(input(f'{nome}, qual a quatidade de energia consumida em kWh?'))
 
 if tipo == 'R':
-    if qtd >= 500:
+    if qtd <= 500:
         valor = qtd * 0.4
     else:
         valor = qtd * 0.65
-    print(f'{nome},o valor a ser pago é: {valor}')
+    print(f'{nome},o valor a ser pago é: R${valor:.2f}')
 elif tipo == 'C':
-    if qtd >= 1000:
+    if qtd <= 1000:
         valor = qtd * 0.55
     else:
         valor = qtd * 0.6
-    print(f'{nome}, o valor a ser pago é: {valor}')
+    print(f'{nome}, o valor a ser pago é: R${valor:.2f}')
+elif tipo == 'I':
+    if qtd <= 5000:
+        valor = qtd * 0.55
+    else:
+        valor = qtd * 0.6
+    print(f'{nome} o valor a ser pago é: R${valor:.2f}')
 else:
-    if qtd >= 5000:
-        valor = qtd * 0.55
-    else:
-        valor = qtd * 0.6
-    print(f'{nome} o valor a ser pago é: {valor}')
+    print('Tipo de instalação inválido, reinicie o código.')
