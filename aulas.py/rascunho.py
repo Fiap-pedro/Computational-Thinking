@@ -31,7 +31,7 @@ for i in a:
     print(i)'''
 
 #
-from time import sleep
+'''from time import sleep
 for i in range(10, 0, -1):
     print(i)
     sleep(0.4)
@@ -42,4 +42,11 @@ while n > -11:
     print(n)
     sleep(0.4)
     n -= 1
-print('FIM')
+print('FIM')'''
+
+'''a = []
+nota = 1
+while nota != 0:
+    nota = int(input('Digite sua nota: '))
+    a.append(nota)
+    print(a)'''
