@@ -1,4 +1,4 @@
-a = [77, 3, 9, 0, 1, 2]
+a = [12, 68, 95, 41, 25, 71]
 print(a)
 
 for iteracao in range(len(a)-1, 0, -1):
